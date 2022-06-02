@@ -4,10 +4,53 @@
       <div class="col-span-3 grid justify-items-end pl-10">
         <ul class="py-2 px-6 border w-full">
           <li
-            class="py-2 border-b border-dashed hover:text-[#DC4538] cursor-pointer"
+            class="py-2 border-b border-dashed cursor-pointer relative"
+            @mouseenter="togglemenuMobileAccess"
+            @mouseleave="togglemenuMobileAccess"
           >
             Mobile Accessories
+
+            <!-- Mobile Accessories Menu -->
+
+            <div
+              class="absolute z-20 left-[250px] -top-[9px] bg-white"
+              v-if="menuMobileAccess"
+            >
+              <ul class="py-2 px-6 border w-64">
+                <li
+                  class="py-2 border-b border-dashed hover:text-[#DC4538] cursor-pointer"
+                >
+                  Mobile Case
+                </li>
+                <li
+                  class="py-2 border-b border-dashed hover:text-[#DC4538] cursor-pointer"
+                >
+                  Power Bank
+                </li>
+                <li
+                  class="py-2 border-b border-dashed hover:text-[#DC4538] cursor-pointer"
+                >
+                  Wireless Charger
+                </li>
+                <li
+                  class="py-2 border-b border-dashed hover:text-[#DC4538] cursor-pointer"
+                >
+                  Car Charger
+                </li>
+                <li
+                  class="py-2 border-b border-dashed hover:text-[#DC4538] cursor-pointer"
+                >
+                  USB Charger
+                </li>
+                <li
+                  class="py-2 border-b border-dashed hover:text-[#DC4538] cursor-pointer"
+                >
+                  Charging Cable
+                </li>
+              </ul>
+            </div>
           </li>
+
           <li
             class="py-2 border-b border-dashed hover:text-[#DC4538] cursor-pointer"
           >
@@ -72,8 +115,6 @@
           </li>
         </ul>
       </div>
-
-      <!-- Image Slider Part -->
 
       <div class="col-span-9">
         <div
@@ -153,3 +194,19 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      menuMobileAccess: false,
+    };
+  },
+
+  methods: {
+    togglemenuMobileAccess() {
+      this.menuMobileAccess = !this.menuMobileAccess;
+    },
+  },
+};
+</script>
