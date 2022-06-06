@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Slider />
     <Banner />
     <Hakii />
     <Music />
@@ -8,6 +7,11 @@
   </div>
 </template>
 
+<script>
+export default {
+  layout: "index",
+};
+</script>
 <style>
 .font-display {
   font-family: "Montserrat", sans-serif;
