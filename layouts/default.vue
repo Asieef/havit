@@ -4,11 +4,11 @@
     <Navbar />
     <div class="grid grid-cols-12">
       <div class="col-span-3">
-        <Dropmenu />
+        <Deptmenu />
       </div>
       <div class="col-span-9">
-        <Searchbar />
-        <Slider />
+        <Search />
+        <Heroslide />
       </div>
     </div>
     <Nuxt />

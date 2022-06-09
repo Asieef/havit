@@ -1,15 +1,19 @@
 <template>
-  <div class="font-display border">
-    <div class="grid grid-cols-12 container h-10 mx-auto">
-      <div class="col-span-3 bg-[#DC4538] grid content-center ml-10">
-        <div class="flex gap-4 px-2 items-center">
-          <img src="/ham.png" />
-          <h2 class="text-white text-sm font-semibold">All Products</h2>
+  <div class="font-display">
+    <!-- All Products Text -->
+    <div class="grid grid-flow-row">
+      <div class="border-y pl-10">
+        <div class="bg-[#DC4538]">
+          <div class="flex gap-4 h-10 px-2 items-center pl-10 cursor-pointer">
+            <img src="/ham.png" />
+            <h2 class="text-white text-sm font-semibold">All Products</h2>
+          </div>
         </div>
+      </div>
 
-        <!-- Drop Menu -->
-
-        <ul class="border w-full">
+      <!-- Left Menu -->
+      <div class="pl-10">
+        <ul class="border bg-white w-full">
           <li
             class="py-2 px-6 border-b border-dashed cursor-pointer relative hover:bg-slate-100"
             @mouseenter="togglemenuMobileAccess"
@@ -17,21 +21,7 @@
           >
             <NuxtLink to="/" class="hover:text-[#DC4538]">
               Mobile Accessories
-              <span class="float-right">
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="{2}"
-                    d="M9 5l7 7-7 7"
-                  /></svg
-              ></span>
+              <span class="float-right"> </span>
             </NuxtLink>
 
             <!-- Mobile Accessories Menu -->
@@ -49,7 +39,7 @@
                 v-if="menuMobileAccess"
               >
                 <ul class="border w-64">
-                  <NuxtLink to="/mobilecase" class="hover:text-[#DC4538]">
+                  <NuxtLink to="/" class="hover:text-[#DC4538]">
                     <li
                       class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                     >
@@ -103,21 +93,7 @@
           >
             <NuxtLink to="/" class="hover:text-[#DC4538]">
               Computer Accessories
-              <span class="float-right">
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="{2}"
-                    d="M9 5l7 7-7 7"
-                  /></svg
-              ></span>
+              <span class="float-right"> </span>
             </NuxtLink>
             <!-- Computer Accessories Menu -->
 
@@ -179,20 +155,7 @@
           >
             <NuxtLink to="/" class="hover:text-[#DC4538]">
               Audio
-              <span class="float-right">
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="{2}"
-                    d="M9 5l7 7-7 7"
-                  /></svg></span
+              <span class="float-right"> </span
             ></NuxtLink>
 
             <!-- Audio Menu -->
@@ -255,21 +218,7 @@
           >
             <NuxtLink to="/" class="hover:text-[#DC4538]">
               Gaming Setup
-              <span class="float-right">
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="{2}"
-                    d="M9 5l7 7-7 7"
-                  /></svg
-              ></span>
+              <span class="float-right"> </span>
             </NuxtLink>
 
             <!-- Gaming Setup Menu -->
@@ -327,20 +276,7 @@
           >
             <NuxtLink to="/" class="hover:text-[#DC4538]">
               Cables
-              <span class="float-right">
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="{2}"
-                    d="M9 5l7 7-7 7"
-                  /></svg></span
+              <span class="float-right"> </span
             ></NuxtLink>
 
             <!-- Cables Menu -->
@@ -395,35 +331,17 @@
           >
             Headphone Stand
           </li>
-
           <li
             class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
           >
             Hub
           </li>
-
           <li
             class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
           >
             Mousepad
           </li>
         </ul>
-      </div>
-      <div class="grid col-span-8 border-r content-center">
-        <form>
-          <input
-            class="px-2 text-sm w-full focus:outline-none"
-            type="text"
-            placeholder="I'm searching for..."
-          />
-        </form>
-      </div>
-      <div
-        class="col-span-1 grid content-center justify-items-center border-r mr-10"
-      >
-        <button type="submit">
-          <img src="/search.png" />
-        </button>
       </div>
     </div>
   </div>
