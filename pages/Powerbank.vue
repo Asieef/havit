@@ -34,8 +34,8 @@ export default {
   data() {
     return {
       products: [],
-      category: "mobile-case",
-      cat_id: [105],
+      category: "power-bank",
+      cat_id: [107],
       menuMobileAccess: false,
       menuCompAccess: false,
       menuAudio: false,

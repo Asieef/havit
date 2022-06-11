@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="mr-10">
     <div
       id="carouselExampleCaptions"
       class="carousel slide relative p-2"

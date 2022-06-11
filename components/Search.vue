@@ -1,7 +1,7 @@
 <template>
   <div class="font-display border-y">
     <div class="grid grid-cols-9 h-10">
-      <div class="col-span-8 border-r">
+      <div class="col-span-8">
         <form>
           <input
             class="px-2 py-2 text-sm w-full focus:outline-none"
@@ -11,8 +11,8 @@
         </form>
       </div>
 
-      <div class="col-span-1 flex border-r mr-10">
-        <button type="submit" class="items-center pl-3">
+      <div class="col-span-1 flex border-x mr-10 justify-center items-center">
+        <button type="submit">
           <img src="/search.png" />
         </button>
       </div>
