@@ -63,42 +63,60 @@
                       v-if="menuMobileAccess"
                     >
                       <ul class="border w-64">
-                        <NuxtLink to="/mobilecase" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/MobileAccessories/mobilecase"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             Mobile Case
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/powerbank" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/MobileAccessories/powerbank"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             Power Bank
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/MobileAccessories/wirelesscharger"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             Wireless Charger
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/MobileAccessories/carcharger"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             Car Charger
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/MobileAccessories/usbcharger"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             USB Charger
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/MobileAccessories/chargingcable"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
@@ -150,28 +168,40 @@
                       v-if="menuCompAccess"
                     >
                       <ul class="border w-64">
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/ComputerAccessories/wiredmouse"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             Wired Mouse
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/ComputerAccessories/wirelessmouse"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             Wireless Mouse
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/ComputerAccessories/keyboard"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             Keyboard
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/ComputerAccessories/keymousecombo"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
@@ -185,7 +215,7 @@
                 <li
                   class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
                 >
-                  Projector
+                  <NuxtLink class="block" to="/projector"> Projector </NuxtLink>
                 </li>
 
                 <li
@@ -228,28 +258,40 @@
                       v-if="menuAudio"
                     >
                       <ul class="border w-64">
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/Audio/btheadearphone"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             BT Headphone & Earphone
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/Audio/wiredheadearphone"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             Wired Headphone & Earphone
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/Audio/speaker"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             Speaker
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/Audio/btspeaker"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
@@ -264,7 +306,9 @@
                 <li
                   class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
                 >
-                  Microphone
+                  <NuxtLink to="/microphone" class="block">
+                    Microphone
+                  </NuxtLink>
                 </li>
                 <li
                   class="py-2 px-6 border-b border-dashed cursor-pointer flex justify-between items-center relative hover:bg-slate-100"

@@ -29,13 +29,12 @@
 </template>
 
 <script>
-import Sidemenu from "../components/Sidemenu.vue";
 export default {
   data() {
     return {
       products: [],
-      category: "power-bank",
-      cat_id: [107],
+      category: "keyboard-mouse-combo",
+      cat_id: [99],
       menuMobileAccess: false,
       menuCompAccess: false,
       menuAudio: false,
@@ -50,7 +49,7 @@ export default {
   methods: {
     getData() {
       this.$axios
-        .get("https://admindash.comcitybd.com/api/brands/Havit/20", {
+        .get("https://admindash.comcitybd.com/api/brands/Havit/80", {
           params: {
             id: this.cat_id,
           },
@@ -79,6 +78,5 @@ export default {
       this.allMenu = !this.allMenu;
     },
   },
-  components: { Sidemenu },
 };
 </script>
