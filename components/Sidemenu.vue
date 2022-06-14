@@ -351,14 +351,20 @@
                       v-if="menuGame"
                     >
                       <ul class="border w-64">
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/GamingSetup/gamingchair"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             Gaming Chair
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/GamingSetup/gamingtable"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
@@ -372,7 +378,9 @@
                 <li
                   class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
                 >
-                  Gamepad
+                  <NuxtLink to="/laptopcoolingpad" class="block"
+                    >Laptop Cooling Pad
+                  </NuxtLink>
                 </li>
                 <li
                   class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
@@ -382,7 +390,9 @@
                 <li
                   class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
                 >
-                  Smart Watch
+                  <NuxtLink to="/smartwatch" class="block">
+                    Smart Watch
+                  </NuxtLink>
                 </li>
                 <li
                   class="py-2 px-6 border-b border-dashed cursor-pointer flex justify-between items-center relative hover:bg-slate-100"
@@ -424,28 +434,40 @@
                       v-if="menuCable"
                     >
                       <ul class="border w-64">
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/Cables/hdmicable"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             HDMI Cable
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/Cables/vgacable"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             VGA Cable
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/Cables/usbextension"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
                             USB Extention Cable
                           </li>
                         </NuxtLink>
-                        <NuxtLink to="/" class="hover:text-[#DC4538]">
+                        <NuxtLink
+                          to="/Cables/powercable"
+                          class="hover:text-[#DC4538]"
+                        >
                           <li
                             class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                           >
@@ -459,18 +481,20 @@
                 <li
                   class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
                 >
-                  Headphone Stand
+                  <NuxtLink to="/headphonestand" class="block"
+                    >Headphone Stand</NuxtLink
+                  >
                 </li>
                 <li
                   class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
                 >
-                  Hub
+                  <NuxtLink to="/hub" class="block"> Hub </NuxtLink>
                 </li>
 
                 <li
                   class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
                 >
-                  Mousepad
+                  <NuxtLink to="/mousepad" class="block"> Mousepad </NuxtLink>
                 </li>
               </ul>
             </div>
