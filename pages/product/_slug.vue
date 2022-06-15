@@ -1,5 +1,5 @@
 <template>
-  <div class="font-display py-16">
+  <div class="font-display py-8">
     <!-- <div class="spin-container" v-if="loading">
             <div class="lds-facebook">
                 <div></div>
@@ -11,7 +11,12 @@
     <div class="container mx-auto">
       <div class="grid lg:grid-flow-col lg:grid-cols-2 grid-cols-1 gap-6 p-16">
         <div class="col-span-1 border border-gray-200">
-          <img :src="product.photo" :alt="product.name" style="width: 100%" />
+          <img
+            :src="product.photo"
+            :alt="product.name"
+            style="width: 100%"
+            class="scale-90 hover:scale-120 ease-in duration-100"
+          />
         </div>
 
         <div class="col-span-1">

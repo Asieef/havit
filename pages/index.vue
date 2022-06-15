@@ -5,7 +5,7 @@
         <Deptmenu />
       </div>
       <div class="col-span-9">
-        <Search />
+        <Search @custom-search="searchs" />
         <Heroslide />
       </div>
     </div>
@@ -21,3 +21,22 @@
   font-family: "Montserrat", sans-serif;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      mydata: "",
+    };
+  },
+  created() {
+    this.$nuxt.$on("customSearch", ($event) => this.searchs($event));
+  },
+  methods: {
+    searchs(event) {
+      console.log(event);
+      this.$router.push({ path: `/search/${event}` });
+    },
+  },
+};
+</script>
