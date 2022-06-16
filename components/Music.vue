@@ -8,8 +8,8 @@
 
         <div>
           <div class="grid grid-cols-6">
-            <div class="col-span-1">
-              <img src="/section-audio-banner-left.jpg" />
+            <div class="col-span-1 hidden lg:block">
+              <img src="/section-audio-banner-left.jpg" class="" />
             </div>
 
             <div class="col-span-5">

@@ -1,6 +1,6 @@
 <template>
   <div class="font-display">
-    <Sidemenu />
+    <Sidemenu class="hidemobile" />
     <div class="mx-10">
       <section class="text-gray-600 body-font relative">
         <div class="pt-8 flex justify-center">

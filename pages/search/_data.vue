@@ -1,6 +1,6 @@
 <template>
   <div class="font-display py-8">
-    <Sidemenu />
+    <Sidemenu class="hidemobile" />
     <div class="container mx-auto">
       <h3 class="px-6 font-semibold uppercase mt-8">
         Search Result For "{{ query }}"

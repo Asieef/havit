@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="font-display">
-      <Sidemenu />
+      <Sidemenu class="hidemobile" />
 
       <div class="mt-14 mx-10">
         <div v-if="products.length == 0">No Product in This Category</div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="grid grid-cols-12">
+    <div class="grid grid-cols-12 hidemobile">
       <div class="col-span-3">
         <Deptmenu />
       </div>
@@ -9,7 +9,10 @@
         <Heroslide />
       </div>
     </div>
-    <Banner />
+    <div class="py-2">
+      <Search />
+    </div>
+    <Banner class="hidemobile" />
     <Hakii />
     <Music />
     <Gaming />
@@ -17,12 +20,21 @@
 </template>
 
 <style>
-.font-display {
-  font-family: "Montserrat", sans-serif;
+@media (max-width: 768px) {
+  .hidemobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidedesktop {
+    display: none;
+  }
 }
 </style>
 
 <script>
+import Search from "../components/Search.vue";
 export default {
   data() {
     return {
@@ -38,5 +50,6 @@ export default {
       this.$router.push({ path: `/search/${event}` });
     },
   },
+  components: { Search },
 };
 </script>
