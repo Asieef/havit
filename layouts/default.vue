@@ -1,8 +1,8 @@
 <template>
   <div>
     <MobileNav class="hidedesktop" />
-    <Topbar class="hidemobile" />
-    <Navbar class="hidemobile" />
+    <Topbar class="hidden md:block" />
+    <Navbar class="hidden md:block" />
     <Nuxt />
     <Footer />
   </div>

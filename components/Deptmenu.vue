@@ -1,20 +1,11 @@
 <template>
   <div class="font-display">
     <!-- All Products Text -->
-    <div class="grid grid-flow-row">
-      <div class="border-t">
-        <div class="border-b pl-10">
-          <div class="bg-[#DC4538]">
-            <div class="flex gap-4 h-10 px-2 items-center cursor-pointer">
-              <img src="/ham.png" class="h-4" />
-              <h2 class="text-white text-sm font-semibold">All Products</h2>
-            </div>
-          </div>
-        </div>
-
+    
+      <div class="grid grid-flow-row">
+        <AllProduct />
         <!-- Left Side Dept Menu -->
-
-        <div class="pl-10 text-sm">
+        <div class="text-sm">
           <ul class="border bg-white w-full">
             <li
               class="py-2 px-6 border-b border-dashed cursor-pointer flex justify-between items-center relative hover:bg-slate-100"
@@ -479,10 +470,10 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
+import AllProduct from "./AllProduct.vue";
 export default {
   data() {
     return {
@@ -493,7 +484,6 @@ export default {
       menuCable: false,
     };
   },
-
   methods: {
     togglemenuMobileAccess() {
       this.menuMobileAccess = !this.menuMobileAccess;
@@ -511,5 +501,6 @@ export default {
       this.menuCable = !this.menuCable;
     },
   },
+  components: { AllProduct },
 };
 </script>

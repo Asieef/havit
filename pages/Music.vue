@@ -9,18 +9,7 @@
           v-if="products != null"
         >
           <div class="" v-for="product in products" :key="product.slug">
-            <router-link :to="`/product/${product.slug}`">
-              <div class="border">
-                <img
-                  :src="product.thumbnail"
-                  alt="Havit"
-                  class="scale-90 hover:scale-100 ease-in duration-300"
-                />
-              </div>
-              <p class="text-sm py-2">
-                {{ product.name }}
-              </p>
-            </router-link>
+             <ProductPod :product='product' />
           </div>
         </div>
       </div>

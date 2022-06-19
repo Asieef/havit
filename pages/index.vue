@@ -1,12 +1,16 @@
 <template>
   <div>
-    <div class="grid grid-cols-12 hidemobile">
-      <div class="col-span-3">
-        <Deptmenu />
-      </div>
-      <div class="col-span-9">
-        <Search @custom-search="searchs" />
-        <Heroslide />
+    <div class="border-y absolute w-full py-5 hidden md:block">
+    </div>
+    <div class="container mx-auto">
+      <div class="grid grid-cols-12 hidemobile">
+        <div class="col-span-3">
+          <Deptmenu />
+        </div>
+        <div class="col-span-9">
+          <Search @custom-search="searchs" />
+          <Heroslide />
+        </div>
       </div>
     </div>
     <div class="py-2 hidedesktop">
