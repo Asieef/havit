@@ -197,7 +197,6 @@
             >
               <a
                 href="https://www.facebook.com/havit.cctl"
-                to="/"
                 class="text-gray-500"
               >
                 <svg

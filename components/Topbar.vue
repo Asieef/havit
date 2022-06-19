@@ -18,9 +18,6 @@
           <a href="https://www.comcitybd.com/brand/Havit" target="blank">
             <li class="px-4 border-r hover:text-[#DC4538]">Shop</li>
           </a>
-          <NuxtLink to="/downloads">
-            <li class="px-4 border-r hover:text-[#DC4538]">Downloads</li>
-          </NuxtLink>
           <NuxtLink to="/about">
             <li class="px-4 hover:text-[#DC4538]">About Us</li>
           </NuxtLink>

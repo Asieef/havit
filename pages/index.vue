@@ -9,7 +9,7 @@
         <Heroslide />
       </div>
     </div>
-    <div class="py-2">
+    <div class="py-2 hidedesktop">
       <Search />
     </div>
     <Banner class="hidemobile" />
@@ -30,6 +30,10 @@
   .hidedesktop {
     display: none;
   }
+}
+
+.font-display {
+  font-family: "Montserrat", sans-serif;
 }
 </style>
 

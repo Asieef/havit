@@ -24,13 +24,13 @@
             </svg>
           </div>
           <section class="text-gray-600 body-font">
-            <div class="container px-5 py-12 mx-auto flex flex-col">
+            <div class="container px-5 mx-auto flex flex-col">
               <div class="lg:w-4/6 mx-auto">
                 <div class="rounded-lg h-64 overflow-hidden">
                   <img
                     alt="content"
                     class="object-cover object-center h-full w-full"
-                    src="/store.jpg"
+                    src="/hakii-banner-g1.jpg"
                   />
                 </div>
                 <div class="flex flex-col sm:flex-row mt-10">
