@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-10 mt-14">
+  <div class="mx-4 lg:mx-10 lg:mt-14 mt-8">
     <div class="container mx-auto">
       <div
         id="carouselExampleSlidesOnly"

@@ -1,5 +1,5 @@
 <template>
-  <div class="font-display mx-10 mt-14">
+  <div class="font-display lg:mx-10 mx-4 lg:mt-14 mt-8">
     <div class="container mx-auto">
       <div class="grid grid-flow-row gap-6">
         <div>

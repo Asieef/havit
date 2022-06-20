@@ -1,5 +1,5 @@
 <template>
-  <div class="font-display py-8">
+  <div class="font-display py-4">
     <!-- <div class="spin-container" v-if="loading">
             <div class="lds-facebook">
                 <div></div>
@@ -9,7 +9,9 @@
         </div> -->
     <Sidemenu class="hidemobile" />
     <div class="container mx-auto">
-      <div class="grid lg:grid-flow-col lg:grid-cols-2 grid-cols-1 gap-6 p-16">
+      <div
+        class="grid lg:grid-flow-col lg:grid-cols-2 grid-cols-1 gap-6 px-8 py-6"
+      >
         <div class="col-span-1 border border-gray-200">
           <img
             :src="product.photo"
@@ -36,7 +38,7 @@
     </div>
 
     <div class="border font-semibold uppercase flex justify-center px-4 py-4">
-      <div class="px-8">
+      <div class="px-4">
         <button
           @click="selectTab(1)"
           :class="{ tabstate: currentTab == 1 }"
@@ -46,7 +48,7 @@
         </button>
       </div>
 
-      <div class="px-8">
+      <div class="px-4">
         <button
           @click="selectTab(2)"
           :class="{ tabstate: currentTab == 2 }"
@@ -57,13 +59,13 @@
       </div>
     </div>
 
-    <div class="px-8 container mx-auto">
+    <div class="px-4 container mx-auto">
       <div v-if="currentTab == 1" class="tabpanel">
-        <div class="px-10 py-6" v-html="product.details"></div>
+        <div class="px-4 py-6" v-html="product.details"></div>
       </div>
 
       <div v-if="currentTab == 2" class="tabpanel">
-        <div class="px-10 py-6" v-html="product.short"></div>
+        <div class="px-4 py-6" v-html="product.short"></div>
       </div>
     </div>
   </div>
