@@ -11,7 +11,7 @@
           />
         </div>
 
-        <div class="flex border-x justify-center items-center px-2">
+        <div class="flex border-x justify-center items-center px-2 mr-10">
           <button type="submit">
             <img src="/search.png" />
           </button>

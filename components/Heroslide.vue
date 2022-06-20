@@ -1,7 +1,7 @@
 <template>
   <div
     id="carouselExampleCaptions"
-    class="carousel slide relative p-2"
+    class="carousel slide relative p-2 pr-10"
     data-bs-ride="carousel"
   >
     <div

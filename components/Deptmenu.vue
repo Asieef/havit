@@ -1,475 +1,469 @@
 <template>
   <div class="font-display">
     <!-- All Products Text -->
-    
-      <div class="grid grid-flow-row">
-        <AllProduct />
-        <!-- Left Side Dept Menu -->
-        <div class="text-sm">
-          <ul class="border bg-white w-full">
-            <li
-              class="py-2 px-6 border-b border-dashed cursor-pointer flex justify-between items-center relative hover:bg-slate-100"
-              @mouseenter="togglemenuMobileAccess"
-              @mouseleave="togglemenuMobileAccess"
-            >
-              <NuxtLink to="/" class="hover:text-[#DC4538]">
-                Mobile Accessories
-              </NuxtLink>
-              <div class="">
-                <svg
-                  class="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
-              </div>
 
-              <!-- Mobile Accessories Menu -->
+    <div class="grid grid-flow-row">
+      <AllProduct />
+      <!-- Left Side Dept Menu -->
+      <div class="text-sm pl-10">
+        <ul class="border bg-white w-full">
+          <li
+            class="py-2 px-6 border-b border-dashed cursor-pointer flex justify-between items-center relative hover:bg-slate-100"
+            @mouseenter="togglemenuMobileAccess"
+            @mouseleave="togglemenuMobileAccess"
+          >
+            <NuxtLink to="/" class="hover:text-[#DC4538]">
+              Mobile Accessories
+            </NuxtLink>
+            <div class="">
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </div>
 
-              <transition
-                enter-active-class="transform ease-out duration-300 transition delay-100 translate-y-2 opacity-0 
+            <!-- Mobile Accessories Menu -->
+
+            <transition
+              enter-active-class="transform ease-out duration-300 transition delay-100 translate-y-2 opacity-0 
             sm:translate-y-0 sm:translate-x-2"
-                enter-to-class="translate-y-0 opacity-100 sm:translate-x-0"
-                leave-active-class="transition opacity-100 ease-in duration-100"
-                leave-to-class="opacity-0"
-                appear
-              >
-                <div
-                  class="absolute z-20 left-full -top-[2px] bg-white shadow"
-                  v-if="menuMobileAccess"
-                >
-                  <ul class="border w-64">
-                    <NuxtLink
-                      to="/MobileAccessories/mobilecase"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Mobile Case
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/MobileAccessories/powerbank"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Power Bank
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/MobileAccessories/wirelesscharger"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Wireless Charger
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/MobileAccessories/carcharger"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Car Charger
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/MobileAccessories/usbcharger"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        USB Charger
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/MobileAccessories/chargingcable"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Charging Cable
-                      </li>
-                    </NuxtLink>
-                  </ul>
-                </div>
-              </transition>
-            </li>
-
-            <li
-              class="py-2 px-6 border-b border-dashed flex justify-between items-center cursor-pointer relative hover:bg-slate-100"
-              @mouseenter="togglemenuCompAccess"
-              @mouseleave="togglemenuCompAccess"
+              enter-to-class="translate-y-0 opacity-100 sm:translate-x-0"
+              leave-active-class="transition opacity-100 ease-in duration-100"
+              leave-to-class="opacity-0"
+              appear
             >
-              <NuxtLink to="/" class="hover:text-[#DC4538]">
-                Computer Accessories
-              </NuxtLink>
-
-              <div class="">
-                <svg
-                  class="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
+              <div
+                class="absolute z-20 left-full -top-[2px] bg-white shadow"
+                v-if="menuMobileAccess"
+              >
+                <ul class="border w-64">
+                  <NuxtLink
+                    to="/MobileAccessories/mobilecase"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Mobile Case
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/MobileAccessories/powerbank"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Power Bank
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/MobileAccessories/wirelesscharger"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Wireless Charger
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/MobileAccessories/carcharger"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Car Charger
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/MobileAccessories/usbcharger"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      USB Charger
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/MobileAccessories/chargingcable"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Charging Cable
+                    </li>
+                  </NuxtLink>
+                </ul>
               </div>
-              <!-- Computer Accessories Menu -->
+            </transition>
+          </li>
 
-              <transition
-                enter-active-class="transform ease-out duration-300 transition delay-100 translate-y-2 opacity-0 
-            sm:translate-y-0 sm:translate-x-2"
-                enter-to-class="translate-y-0 opacity-100 sm:translate-x-0"
-                leave-active-class="transition opacity-100 ease-in duration-100"
-                leave-to-class="opacity-0"
-                appear
+          <li
+            class="py-2 px-6 border-b border-dashed flex justify-between items-center cursor-pointer relative hover:bg-slate-100"
+            @mouseenter="togglemenuCompAccess"
+            @mouseleave="togglemenuCompAccess"
+          >
+            <NuxtLink to="/" class="hover:text-[#DC4538]">
+              Computer Accessories
+            </NuxtLink>
+
+            <div class="">
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <div
-                  class="absolute z-20 left-full -top-[2px] bg-white shadow"
-                  v-if="menuCompAccess"
-                >
-                  <ul class="border w-64">
-                    <NuxtLink
-                      to="/ComputerAccessories/wiredmouse"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Wired Mouse
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/ComputerAccessories/wirelessmouse"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Wireless Mouse
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/ComputerAccessories/keyboard"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Keyboard
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/ComputerAccessories/keymousecombo"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Mouse Keyboard Combo
-                      </li>
-                    </NuxtLink>
-                  </ul>
-                </div>
-              </transition>
-            </li>
-            <li
-              class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
-            >
-              <NuxtLink class="block" to="/projector"> Projector </NuxtLink>
-            </li>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </div>
+            <!-- Computer Accessories Menu -->
 
-            <li
-              class="py-2 px-6 border-b border-dashed flex justify-between items-center cursor-pointer relative hover:bg-slate-100"
-              @mouseenter="togglemenuAudio"
-              @mouseleave="togglemenuAudio"
+            <transition
+              enter-active-class="transform ease-out duration-300 transition delay-100 translate-y-2 opacity-0 
+            sm:translate-y-0 sm:translate-x-2"
+              enter-to-class="translate-y-0 opacity-100 sm:translate-x-0"
+              leave-active-class="transition opacity-100 ease-in duration-100"
+              leave-to-class="opacity-0"
+              appear
             >
-              <NuxtLink to="/" class="hover:text-[#DC4538]"> Audio </NuxtLink>
-              <div class="">
-                <svg
-                  class="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
+              <div
+                class="absolute z-20 left-full -top-[2px] bg-white shadow"
+                v-if="menuCompAccess"
+              >
+                <ul class="border w-64">
+                  <NuxtLink
+                    to="/ComputerAccessories/wiredmouse"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Wired Mouse
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/ComputerAccessories/wirelessmouse"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Wireless Mouse
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/ComputerAccessories/keyboard"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Keyboard
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/ComputerAccessories/keymousecombo"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Mouse Keyboard Combo
+                    </li>
+                  </NuxtLink>
+                </ul>
               </div>
+            </transition>
+          </li>
+          <li
+            class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
+          >
+            <NuxtLink class="block" to="/projector"> Projector </NuxtLink>
+          </li>
 
-              <!-- Audio Menu -->
-
-              <transition
-                enter-active-class="transform ease-out duration-300 transition delay-100 translate-y-2 opacity-0 
-            sm:translate-y-0 sm:translate-x-2"
-                enter-to-class="translate-y-0 opacity-100 sm:translate-x-0"
-                leave-active-class="transition opacity-100 ease-in duration-100"
-                leave-to-class="opacity-0"
-                appear
+          <li
+            class="py-2 px-6 border-b border-dashed flex justify-between items-center cursor-pointer relative hover:bg-slate-100"
+            @mouseenter="togglemenuAudio"
+            @mouseleave="togglemenuAudio"
+          >
+            <NuxtLink to="/" class="hover:text-[#DC4538]"> Audio </NuxtLink>
+            <div class="">
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <div
-                  class="absolute z-20 left-full -top-[2px] bg-white shadow"
-                  v-if="menuAudio"
-                >
-                  <ul class="border w-64">
-                    <NuxtLink
-                      to="/Audio/btheadearphone"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        BT Headphone & Earphone
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/Audio/wiredheadearphone"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Wired Headphone & Earphone
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink to="/Audio/speaker" class="hover:text-[#DC4538]">
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Speaker
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink to="/Audio/speaker" class="hover:text-[#DC4538]">
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Bluetooth Speaker
-                      </li>
-                    </NuxtLink>
-                  </ul>
-                </div>
-              </transition>
-            </li>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </div>
 
-            <li
-              class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
-            >
-              <NuxtLink to="/microphone" class="block"> Microphone </NuxtLink>
-            </li>
-            <li
-              class="py-2 px-6 border-b border-dashed cursor-pointer flex justify-between items-center relative hover:bg-slate-100"
-              @mouseenter="togglemenuGame"
-              @mouseleave="togglemenuGame"
-            >
-              <NuxtLink to="/" class="hover:text-[#DC4538]">
-                Gaming Setup
-              </NuxtLink>
+            <!-- Audio Menu -->
 
-              <div class="">
-                <svg
-                  class="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
+            <transition
+              enter-active-class="transform ease-out duration-300 transition delay-100 translate-y-2 opacity-0 
+            sm:translate-y-0 sm:translate-x-2"
+              enter-to-class="translate-y-0 opacity-100 sm:translate-x-0"
+              leave-active-class="transition opacity-100 ease-in duration-100"
+              leave-to-class="opacity-0"
+              appear
+            >
+              <div
+                class="absolute z-20 left-full -top-[2px] bg-white shadow"
+                v-if="menuAudio"
+              >
+                <ul class="border w-64">
+                  <NuxtLink
+                    to="/Audio/btheadearphone"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      BT Headphone & Earphone
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/Audio/wiredheadearphone"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Wired Headphone & Earphone
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink to="/Audio/speaker" class="hover:text-[#DC4538]">
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Speaker
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink to="/Audio/speaker" class="hover:text-[#DC4538]">
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Bluetooth Speaker
+                    </li>
+                  </NuxtLink>
+                </ul>
               </div>
+            </transition>
+          </li>
 
-              <!-- Gaming Setup Menu -->
+          <li
+            class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
+          >
+            <NuxtLink to="/microphone" class="block"> Microphone </NuxtLink>
+          </li>
+          <li
+            class="py-2 px-6 border-b border-dashed cursor-pointer flex justify-between items-center relative hover:bg-slate-100"
+            @mouseenter="togglemenuGame"
+            @mouseleave="togglemenuGame"
+          >
+            <NuxtLink to="/" class="hover:text-[#DC4538]">
+              Gaming Setup
+            </NuxtLink>
 
-              <transition
-                enter-active-class="transform ease-out duration-300 transition delay-100 translate-y-2 opacity-0 
-            sm:translate-y-0 sm:translate-x-2"
-                enter-to-class="translate-y-0 opacity-100 sm:translate-x-0"
-                leave-active-class="transition opacity-100 ease-in duration-100"
-                leave-to-class="opacity-0"
-                appear
+            <div class="">
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <div
-                  class="absolute z-20 left-full -top-[2px] bg-white shadow"
-                  v-if="menuGame"
-                >
-                  <ul class="border w-64">
-                    <NuxtLink
-                      to="/GamingSetup/gamingchair"
-                      class="hover:text-[#DC4538]"
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </div>
+
+            <!-- Gaming Setup Menu -->
+
+            <transition
+              enter-active-class="transform ease-out duration-300 transition delay-100 translate-y-2 opacity-0 
+            sm:translate-y-0 sm:translate-x-2"
+              enter-to-class="translate-y-0 opacity-100 sm:translate-x-0"
+              leave-active-class="transition opacity-100 ease-in duration-100"
+              leave-to-class="opacity-0"
+              appear
+            >
+              <div
+                class="absolute z-20 left-full -top-[2px] bg-white shadow"
+                v-if="menuGame"
+              >
+                <ul class="border w-64">
+                  <NuxtLink
+                    to="/GamingSetup/gamingchair"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                     >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Gaming Chair
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/GamingSetup/gamingtable"
-                      class="hover:text-[#DC4538]"
+                      Gaming Chair
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/GamingSetup/gamingtable"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
                     >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Gaming Table
-                      </li>
-                    </NuxtLink>
-                  </ul>
-                </div>
-              </transition>
-            </li>
-            <li
-              class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
-            >
-              <NuxtLink to="/gamepad" class="block"> Gamepad </NuxtLink>
-            </li>
-            <li
-              class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
-            >
-              <NuxtLink to="/laptopcoolingpad" class="block">
-                Laptop Cooling Pad
-              </NuxtLink>
-            </li>
-            <li
-              class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
-            >
-              <NuxtLink to="/smartwatch" class="block"> Smart Watch </NuxtLink>
-            </li>
-            <li
-              class="py-2 px-6 border-b border-dashed cursor-pointer flex justify-between items-center relative hover:bg-slate-100"
-              @mouseenter="togglemenuCable"
-              @mouseleave="togglemenuCable"
-            >
-              <NuxtLink to="/" class="hover:text-[#DC4538]"> Cables </NuxtLink>
-              <div class="">
-                <svg
-                  class="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
+                      Gaming Table
+                    </li>
+                  </NuxtLink>
+                </ul>
               </div>
+            </transition>
+          </li>
+          <li
+            class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
+          >
+            <NuxtLink to="/gamepad" class="block"> Gamepad </NuxtLink>
+          </li>
+          <li
+            class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
+          >
+            <NuxtLink to="/laptopcoolingpad" class="block">
+              Laptop Cooling Pad
+            </NuxtLink>
+          </li>
+          <li
+            class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
+          >
+            <NuxtLink to="/smartwatch" class="block"> Smart Watch </NuxtLink>
+          </li>
+          <li
+            class="py-2 px-6 border-b border-dashed cursor-pointer flex justify-between items-center relative hover:bg-slate-100"
+            @mouseenter="togglemenuCable"
+            @mouseleave="togglemenuCable"
+          >
+            <NuxtLink to="/" class="hover:text-[#DC4538]"> Cables </NuxtLink>
+            <div class="">
+              <svg
+                class="w-3 h-3"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </div>
 
-              <!-- Cables Menu -->
+            <!-- Cables Menu -->
 
-              <transition
-                enter-active-class="transform ease-out duration-300 transition delay-100 translate-y-2 opacity-0 
+            <transition
+              enter-active-class="transform ease-out duration-300 transition delay-100 translate-y-2 opacity-0 
             sm:translate-y-0 sm:translate-x-2"
-                enter-to-class="translate-y-0 opacity-100 sm:translate-x-0"
-                leave-active-class="transition opacity-100 ease-in duration-100"
-                leave-to-class="opacity-0"
-                appear
-              >
-                <div
-                  class="absolute z-20 left-full -top-[2px] bg-white shadow"
-                  v-if="menuCable"
-                >
-                  <ul class="border w-64">
-                    <NuxtLink
-                      to="/Cables/hdmicable"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        HDMI Cable
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/Cables/vgacable"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        VGA Cable
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/Cables/usbextension"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        USB Extention Cable
-                      </li>
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/Cables/powercable"
-                      class="hover:text-[#DC4538]"
-                    >
-                      <li
-                        class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
-                      >
-                        Power Cable
-                      </li>
-                    </NuxtLink>
-                  </ul>
-                </div>
-              </transition>
-            </li>
-            <li
-              class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
+              enter-to-class="translate-y-0 opacity-100 sm:translate-x-0"
+              leave-active-class="transition opacity-100 ease-in duration-100"
+              leave-to-class="opacity-0"
+              appear
             >
-              <NuxtLink to="/headphonestand" class="block"
-                >Headphone Stand</NuxtLink
+              <div
+                class="absolute z-20 left-full -top-[2px] bg-white shadow"
+                v-if="menuCable"
               >
-            </li>
-            <li
-              class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
+                <ul class="border w-64">
+                  <NuxtLink to="/Cables/hdmicable" class="hover:text-[#DC4538]">
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      HDMI Cable
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink to="/Cables/vgacable" class="hover:text-[#DC4538]">
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      VGA Cable
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/Cables/usbextension"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      USB Extention Cable
+                    </li>
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/Cables/powercable"
+                    class="hover:text-[#DC4538]"
+                  >
+                    <li
+                      class="py-2 border-b border-dashed px-6 hover:bg-slate-100"
+                    >
+                      Power Cable
+                    </li>
+                  </NuxtLink>
+                </ul>
+              </div>
+            </transition>
+          </li>
+          <li
+            class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
+          >
+            <NuxtLink to="/headphonestand" class="block"
+              >Headphone Stand</NuxtLink
             >
-              <NuxtLink to="/hub" class="block"> Hub </NuxtLink>
-            </li>
+          </li>
+          <li
+            class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
+          >
+            <NuxtLink to="/hub" class="block"> Hub </NuxtLink>
+          </li>
 
-            <li
-              class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
-            >
-              <NuxtLink to="/mousepad" class="block"> Mousepad </NuxtLink>
-            </li>
-          </ul>
-        </div>
+          <li
+            class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
+          >
+            <NuxtLink to="/mousepad" class="block"> Mousepad </NuxtLink>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
 </template>
 
 <script>

@@ -392,7 +392,7 @@
                     <li
                       class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"
                     >
-                      Laptop Cooling Pad
+                      <NuxtLink to="/gamepad" class="block"> Gamepad </NuxtLink>
                     </li>
                     <li
                       class="py-2 px-6 border-b border-dashed hover:text-[#DC4538] cursor-pointer hover:bg-slate-100"

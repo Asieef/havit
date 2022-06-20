@@ -3,6 +3,9 @@
     <MobileNav class="hidedesktop" />
     <Topbar class="hidden md:block" />
     <Navbar class="hidden md:block" />
+    <div class="py-2 hidedesktop">
+      <Search />
+    </div>
     <Nuxt />
     <Footer />
   </div>

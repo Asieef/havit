@@ -1,5 +1,5 @@
 <template>
-  <div class="border-t border-b">
+  <div class="border-t border-b pl-10">
     <div class="bg-[#DC4538]">
       <div class="flex gap-4 h-10 px-2 items-center cursor-pointer">
         <img src="/ham.png" class="h-4" />

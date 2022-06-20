@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div class="border-y absolute w-full py-5 hidden md:block">
-    </div>
+    <div class="border-y absolute w-full -z-20 py-5 hidden md:block"></div>
     <div class="container mx-auto">
       <div class="grid grid-cols-12 hidemobile">
         <div class="col-span-3">
@@ -13,9 +12,7 @@
         </div>
       </div>
     </div>
-    <div class="py-2 hidedesktop">
-      <Search />
-    </div>
+
     <Banner class="hidemobile" />
     <Hakii />
     <Music />
