@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="border-y absolute w-full py-5 hidden md:block"></div>
+    <div class="border-y absolute -z-20 w-full py-5 hidden md:block"></div>
     <div class="container mx-auto">
       <div class="grid grid-cols-12">
         <div class="col-span-3">

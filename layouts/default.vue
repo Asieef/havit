@@ -4,7 +4,7 @@
     <Topbar class="hidden md:block" />
     <Navbar class="hidden md:block" />
     <div class="py-2 hidedesktop">
-      <Search />
+      <Search @custom-search="searchs" />
     </div>
     <Nuxt />
     <Footer />
@@ -24,3 +24,24 @@
   }
 }
 </style>
+
+<script>
+import Search from "../components/Search.vue";
+export default {
+  data() {
+    return {
+      mydata: "",
+    };
+  },
+  created() {
+    this.$nuxt.$on("customSearch", ($event) => this.searchs($event));
+  },
+  methods: {
+    searchs(event) {
+      console.log(event);
+      this.$router.push({ path: `/search/${event}` });
+    },
+  },
+  components: { Search },
+};
+</script>
