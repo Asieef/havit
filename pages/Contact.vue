@@ -160,7 +160,7 @@ export default {
   methods: {
     sendMail() {
       this.$axios
-        .post("https://submit-form.com/eNqzBhtY", {
+        .post("https://submit-form.com/5oH0IVhY", {
           name: this.customername,
           email: this.email,
           message: this.message,
